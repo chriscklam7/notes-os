@@ -1,2 +1,7 @@
-# notes-os
-Notes of OS
+# Notes of OS
+
+Linux
+
+Mac
+
+Windows
