@@ -1,7 +1,7 @@
 # Notes of OS
 
-Linux
+[Linux](https://github.com/chikin-l/notes-os/blob/main/Linux.md)
 
-Mac
+[Mac](https://github.com/chikin-l/notes-os/blob/main/Mac.md)
 
-Windows
+[Windows](https://github.com/chikin-l/notes-os/blob/main/Windows.md)
