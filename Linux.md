@@ -33,6 +33,20 @@ echo 'Defaults !pwfeedback' | sudo EDITOR='tee' visudo -f /etc/sudoers.d/disable
 
 </details>
 
+
+<details>
+<summary>BMS / iDrac</summary>
+
+<br />
+
+Reset
+```shell
+ipmitool mc reset cold
+```
+
+</details>
+
+
 <details>
 <summary>Flush DNS</summary>
 
