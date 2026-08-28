@@ -32,9 +32,20 @@ Installation
 apt-get install zstd
 ```
 
-Compress 1 folder with tar
+Compress 1 folder with tar (Level 3, use all threads, default)
 ```shell
 tar --zstd -cfv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
+tar -I 'zstd -T0' -cfv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
+```
+
+Compress 1 folder with tar (Level 19, use all threads)
+```shell
+tar -I 'zstd -T0 -19' -cfv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
+```
+
+Compress 1 folder with tar (Level 22, use all threads)
+```shell
+tar -I 'zstd -T0 --Ultra -22 --long=27' -cfv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
 ```
 
 Decompress with tar
