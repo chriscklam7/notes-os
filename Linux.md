@@ -23,6 +23,43 @@ sudo rm /var/lib/dpkg/lock*
 </details>
 
 <details>
+<summary>Compression - ZTSD</summary>
+
+<br />
+
+Installation
+```shell
+apt-get install zstd
+```
+
+Compress 1 folder with tar
+```shell
+tar --zstd -cfv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
+```
+
+Decompress with tar
+```shell
+tar --zstd -xfv [ZTSD_FILE]
+```
+
+Compress and remove original files after successfull compression
+```shell
+ztsd --rm [SOURCE_FILES]
+```
+
+Compress with specific number of threads
+```shell
+ztsd --threads [NUMBER_THREADS] [SOURCE_FILES]
+```
+
+Grep file
+```shell
+ztsdgrep [PATTERN] [FILES]
+```
+
+</details>
+
+<details>
 <summary>Disable password feedback</summary>
 
 <br />
