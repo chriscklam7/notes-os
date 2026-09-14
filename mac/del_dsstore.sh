@@ -7,3 +7,5 @@ rm -f */*/.DS_Store
 rm -f */*/*/.DS_Store
 rm -f */*/*/*/.DS_Store
 rm -f */*/*/*/*/.DS_Store
+
+exit 0
