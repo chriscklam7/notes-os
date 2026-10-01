@@ -34,23 +34,23 @@ apt-get install zstd
 
 Compress 1 folder with tar (Level 3, use all threads, default)
 ```shell
-tar --zstd -cfv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
-tar -I 'zstd -T0' -cfv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
+tar --zstd -cv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
+tar -I 'zstd -T0' -cv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
 ```
 
 Compress 1 folder with tar (Level 19, use all threads)
 ```shell
-tar -I 'zstd -T0 -19' -cfv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
+tar -I 'zstd -T0 -19' -cv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
 ```
 
 Compress 1 folder with tar (Level 22, use all threads)
 ```shell
-tar -I 'zstd -T0 --Ultra -22 --long=27' -cfv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
+tar -I 'zstd -T0 --Ultra -22 --long=27' -cv [OUTPUT_ZTSD_FILE] [SOURCE_FOLDER]
 ```
 
 Decompress with tar
 ```shell
-tar --zstd -xfv [ZTSD_FILE]
+tar --zstd -xv [ZTSD_FILE]
 ```
 
 Compress and remove original files after successfull compression
