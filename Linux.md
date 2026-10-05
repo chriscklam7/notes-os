@@ -165,6 +165,41 @@ sudo systemctl daemon-reload && sudo mount -a
 </details>
 
 <details>
+<summary>Partition</summary>
+
+<br />
+
+Check drive name
+```shell
+lsblk
+```
+
+Parted
+```shell
+parted /dev/[DRIVENAME]
+```
+
+Print partition(s)
+
+```shell
+parted /dev/[DRIVENAME] print
+```
+
+Create partition table
+
+```shell
+parted /dev/[DRIVENAME] mklabel gpt
+```
+
+Create empty partition for LVM
+
+```shell
+parted /dev/[DRIVENAME] mkpart primary 0% 100%
+```
+
+</details>
+
+<details>
 <summary>SSL cert - Import</summary>
 
 <br />
