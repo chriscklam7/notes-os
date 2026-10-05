@@ -83,7 +83,7 @@ echo 'Defaults !pwfeedback' | sudo EDITOR='tee' visudo -f /etc/sudoers.d/disable
 
 
 <details>
-<summary>BMS / iDrac</summary>
+<summary>BMC / iDrac</summary>
 
 <br />
 
